@@ -1,8 +1,3 @@
-*{
-  box-sizing: border-box;
-  margin: 0;
-}
-
 :root{
   --darkpurple: #4b2865;
   --darkerpurple: #231325;
@@ -13,53 +8,16 @@
 
 body{
   background-color: var(--lightpurple);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 header,footer{
   background-color: var(--darkpurple);
-  color: var(--white);
-  width: 100%;
-  padding: 10px;
   border: 10px solid var(--darkerpurple);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
 }
 
-footer{
-  bottom: 0;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-}
-
-footer a{
-  font-size: 20px;
-  margin: 0px;
-}
-
-h1{
-  font-size: 40px;
-  margin: 100px;
-}
-
-h2{
-  font-size: 30px;
-  margin: 30px 50px;
-}
-
-h3{
-  font-size: 30px;
-  margin: 20px 15px;
-}
-
-a{
+.nav-link{
   color: var(--white);
-  text-decoration: none;
   font-size: 30px;
   margin: 10px 20px;
   text-align: center;
@@ -73,80 +31,4 @@ p{
 
 img{
   border: 10px solid var(--darkerpurple);
-  width: 90%;
-  object-fit: scale-down;
-}
-
-.sections{
-  border-top: 10px solid var(--darkerpurple);
-  color: var(--white);
-  text-align: left;
-  background-color: var(--purple);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.description{
-  flex: 1;
-  width: 30%;
-  margin: 30px;
-  font-size: 20px;
-}
-
-.bios img{
-  margin: 40px;
-  width: 40%;
-  height: 40%;
-}
-
-.previous-projects{
-  justify-content: space-evenly;
-  display: flex;
-  flex-wrap: wrap;
-  width: 90%;
-}
-
-
-.example{
-  padding: 30px;
-  background-color: var(--lightpurple);
-  color: black;
-  border: 10px solid var(--darkpurple);
-  margin: 10px;
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.featured{
-  width: 100%;
-}
-
-@media screen and (max-width: 768px) 
-{
-  .sections{
-      justify-content: center;
-  }
-  
-  .description{
-      width: 100%;
-  }
-  .bios img{
-      width: 75%;
-      margin: 50px;
-  }
-  
-  .example{
-      flex: 1 0 100%;
-  }
-
-  .example img{
-      width: 100%;
-      height: 400px;
-  }
-  .example p{
-      width: 100%;
-  }
 }

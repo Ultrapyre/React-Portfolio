@@ -1,4 +1,6 @@
 import React from "react";
+import Project from "../components/Project"
+// Todo: Shrink this down using the 'project' component
 
 const Projects = () => {
     <section id="projects" class="sections">

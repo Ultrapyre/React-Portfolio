@@ -3,7 +3,7 @@ import NavLinks from './NavLinks';
 
 export default function Header(){
     return (
-        <header>
+        <header className='w-100 p-3 text-center'>
             <NavLinks />
         </header>
     )
